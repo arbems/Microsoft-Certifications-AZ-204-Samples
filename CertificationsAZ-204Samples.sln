@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KeyVault", "KeyVault", "{782825CA-FDEC-48BF-BCC7-BD68EEEC2F93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure Container Registry", "Azure Container Registry", "{1CC253CC-2F98-4562-8063-88F46C4D370D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure Container Instances", "Azure Container Instances", "{D4AE2055-E199-47FC-A22D-CA553592D36A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure Container Apps", "Azure Container Apps", "{6F4997F7-99C8-495C-8F65-DA147BA4636C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure Cosmos DB", "Azure Cosmos DB", "{395A0652-A7D8-4350-AEAA-93FF556F786F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure Blob Storage", "Azure Blob Storage", "{0246583E-9832-4831-8C2C-4C6D8E22F057}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security", "Security", "{255FB777-0EAE-4922-B472-8816A63C60D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Caching", "Caching", "{772BD364-B9B8-4506-B82E-A427B20AA901}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppInsights", "AppInsights", "{93C1073B-8938-4240-A0D4-CBBE350F088F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIManagement", "APIManagement", "{F820B4D7-47E7-4B6A-B368-E2EB6A3580B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Event-based", "Event-based", "{00A701B0-22D9-4B6D-9F5F-241D2F016FD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Message-based", "Message-based", "{D63E556E-C5EF-4728-9B34-CD3B363B9879}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3700C867-979A-4A2B-B191-902E3A8008FD}
+	EndGlobalSection
+EndGlobal
