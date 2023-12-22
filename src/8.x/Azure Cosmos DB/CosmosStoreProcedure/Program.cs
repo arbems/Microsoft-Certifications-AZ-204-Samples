@@ -22,15 +22,15 @@ async Task GetStartedDemoAsync()
 
     string storedProcedureId = "createToDoItem";
     await RegisterAStoredProcedure(storedProcedureId);
-    await SpCreateToDoItem(storedProcedureId);
+    await CreateToDoItem(storedProcedureId);
 
     storedProcedureId = "createToDoItems";
     await RegisterAStoredProcedure(storedProcedureId);
-    await SpCreateToDoItems(storedProcedureId);
+    await CreateToDoItems(storedProcedureId);
 
     storedProcedureId = "deleteToDoItems";
     await RegisterAStoredProcedure(storedProcedureId);
-    await SpDeleteToDoItems(storedProcedureId, "SELECT * FROM c where CONTAINS(c.id, '10') OR CONTAINS(c.id, '11')");
+    await DeleteToDoItems(storedProcedureId, "SELECT * FROM c where CONTAINS(c.id, '10') OR CONTAINS(c.id, '11')");
 }
 
 async Task RegisterAStoredProcedure(string storedProcedureId)
@@ -48,7 +48,7 @@ async Task RegisterAStoredProcedure(string storedProcedureId)
     Console.WriteLine("Created Stored Procedure in database with id: {0} Operation consumed {1} RUs.\n", spResponse.Resource.Id, spResponse.RequestCharge);
 }
 
-async Task SpCreateToDoItem(string storedProcedureId)
+async Task CreateToDoItem(string storedProcedureId)
 {
     var item = new
     {
@@ -78,7 +78,7 @@ async Task SpCreateToDoItem(string storedProcedureId)
     Console.WriteLine("Created item in database with id: {0} Operation consumed {1} RUs.\n", spExecuteResponse.Resource.Id, spExecuteResponse.RequestCharge);
 }
 
-async Task SpCreateToDoItems(string storedProcedureId)
+async Task CreateToDoItems(string storedProcedureId)
 {
     var items = new[] {
         new {
@@ -124,7 +124,7 @@ async Task SpCreateToDoItems(string storedProcedureId)
     Console.WriteLine("Created items in database. Operation consumed {0} RUs.\n", spExecuteResponse.RequestCharge);
 }
 
-async Task SpDeleteToDoItems(string storedProcedureId, string query)
+async Task DeleteToDoItems(string storedProcedureId, string query)
 {
     container = cosmosClient.GetContainer(databaseId, containerId);
 
