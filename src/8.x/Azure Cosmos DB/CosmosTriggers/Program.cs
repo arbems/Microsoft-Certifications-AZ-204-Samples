@@ -22,11 +22,11 @@ async Task GetStartedDemoAsync()
 
     // Pre-triggers
     string triggerId = "validateToDoItemTimestamp";
-    //await RegisterATrigger(triggerId);
+    await RegisterATrigger(triggerId);
 
     // Post-triggers
     triggerId = "updateMetadata";
-    //await RegisterATrigger(triggerId);
+    await RegisterATrigger(triggerId);
 
     await AddItemsToContainerAsync();
 }
