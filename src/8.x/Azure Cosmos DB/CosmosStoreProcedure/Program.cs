@@ -1,7 +1,6 @@
 ﻿using CosmosStoreProcedure;
 using Microsoft.Azure.Cosmos;
 using Microsoft.Azure.Cosmos.Scripts;
-using Microsoft.Win32;
 using System.Configuration;
 
 string EndpointUri = ConfigurationManager.AppSettings["EndPointUri"]!;
@@ -9,7 +8,6 @@ string PrimaryKey = ConfigurationManager.AppSettings["PrimaryKey"]!;
 
 CosmosClient cosmosClient;
 
-Database database = null!;
 Container container = null!;
 
 string databaseId = "TodoDatabase";
@@ -22,15 +20,15 @@ async Task GetStartedDemoAsync()
     // Create a new instance of the Cosmos Client
     cosmosClient = new CosmosClient(EndpointUri, PrimaryKey);
 
-    string storedProcedureId = "spCreateToDoItem";
+    string storedProcedureId = "createToDoItem";
     await RegisterAStoredProcedure(storedProcedureId);
     await SpCreateToDoItem(storedProcedureId);
 
-    storedProcedureId = "spCreateToDoItems";
+    storedProcedureId = "createToDoItems";
     await RegisterAStoredProcedure(storedProcedureId);
     await SpCreateToDoItems(storedProcedureId);
 
-    storedProcedureId = "spDeleteToDoItems";
+    storedProcedureId = "deleteToDoItems";
     await RegisterAStoredProcedure(storedProcedureId);
     await SpDeleteToDoItems(storedProcedureId, "SELECT * FROM c where CONTAINS(c.id, '10') OR CONTAINS(c.id, '11')");
 }

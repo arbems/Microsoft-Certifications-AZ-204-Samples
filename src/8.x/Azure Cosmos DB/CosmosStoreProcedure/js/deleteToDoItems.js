@@ -1,4 +1,4 @@
-﻿function spDeleteToDoItems(query) {
+﻿function deleteToDoItems(query) {
     var collection = getContext().getCollection();
     var collectionLink = collection.getSelfLink();
     var response = getContext().getResponse();

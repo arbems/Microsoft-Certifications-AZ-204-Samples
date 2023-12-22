@@ -12,13 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="js\deleteToDoItems.js">
+    <None Update="js\updateMetadata.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="js\createToDoItem.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="js\createToDoItems.js">
+    <None Update="js\validateToDoItemTimestamp.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

@@ -1,4 +1,4 @@
-﻿function spCreateToDoItem(item) {
+﻿function createToDoItem(item) {
     var context = getContext();
     var collection = context.getCollection();
     var accepted = collection.createDocument(

@@ -5,10 +5,10 @@ using System.Configuration;
 using System.Net;
 
 // The Azure Cosmos DB endpoint for running this sample.
-string EndpointUri = ConfigurationManager.AppSettings["EndPointUri"];
+string EndpointUri = ConfigurationManager.AppSettings["EndPointUri"]!;
 
 // The primary key for the Azure Cosmos account.
-string PrimaryKey = ConfigurationManager.AppSettings["PrimaryKey"];
+string PrimaryKey = ConfigurationManager.AppSettings["PrimaryKey"]!;
 
 // The Cosmos client instance
 CosmosClient cosmosClient;
@@ -37,7 +37,7 @@ async Task GetStartedDemoAsync()
     await ReplaceTodoItemAsync();
     await TransactionalBatchAsync();
     await DeleteTodoItemAsync();
-    //await DeleteDatabaseAndCleanupAsync();
+    await DeleteDatabaseAndCleanupAsync();
 }
 
 async Task CreateDatabaseAsync()

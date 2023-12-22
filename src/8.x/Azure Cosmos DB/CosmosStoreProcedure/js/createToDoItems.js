@@ -1,4 +1,4 @@
-﻿function spCreateToDoItems(items) {
+﻿function createToDoItems(items) {
     var collection = getContext().getCollection();
     var collectionLink = collection.getSelfLink();
     var count = 0;
