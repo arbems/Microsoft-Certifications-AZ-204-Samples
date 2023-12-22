@@ -9,7 +9,7 @@ Data:
     "listId": 123,
     "title": "Circle",
     "note": "Note circle",
-    "priority": 3,
+    "priority": "High",
     "reminder": "2023-01-10T10:00:00",
     "done": false,
     "list": {
@@ -23,7 +23,7 @@ Data:
     "listId": 123,
     "title": "Square",
     "note": "Note square",
-    "priority": 3,
+    "priority": "High",
     "reminder": "2023-01-10T10:00:00",
     "done": false,
     "list": {
@@ -37,7 +37,7 @@ Data:
     "listId": 123,
     "title": "Rectangle",
     "note": "Note rectangle",
-    "priority": 1,
+    "priority": "Low",
     "reminder": "2023-01-10T10:00:00",
     "done": false,
     "list": {
@@ -63,7 +63,7 @@ Data:
             "listId": "123",
             "title": "Circle",
             "note": "Note circle",
-            "priority": 3,
+            "priority": "High",
             "reminder": "2023-01-10T10:00:00",
             "done": false
         },
@@ -72,7 +72,7 @@ Data:
             "listId": "123",
             "title": "Square",
             "note": "Note square",
-            "priority": 3,
+            "priority": "High",
             "reminder": "2023-01-10T10:00:00",
             "done": false
         },
@@ -81,7 +81,7 @@ Data:
             "listId": "123",
             "title": "Rectangle",
             "note": "Note rectangle",
-            "priority": 1,
+            "priority": "Low",
             "reminder": "2023-01-10T10:00:00",
             "done": false
         }

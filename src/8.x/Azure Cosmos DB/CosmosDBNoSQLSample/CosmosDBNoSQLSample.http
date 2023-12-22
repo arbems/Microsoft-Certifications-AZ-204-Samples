@@ -1,6 +1,0 @@
-@CosmosDBNoSQLSample_HostAddress = http://localhost:5159
-
-GET {{CosmosDBNoSQLSample_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
