@@ -1,0 +1,6 @@
+@KeyVaultManagedIdentity_HostAddress = http://localhost:5068
+
+GET {{KeyVaultManagedIdentity_HostAddress}}/
+Accept: application/json
+
+###

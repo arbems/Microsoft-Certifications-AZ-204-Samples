@@ -27,13 +27,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Event-based", "Event-based"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Message-based", "Message-based", "{D63E556E-C5EF-4728-9B34-CD3B363B9879}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosGettingStarted", "src\8.x\Azure Cosmos DB\CosmosGettingStarted\CosmosGettingStarted.csproj", "{7797B8CA-8493-4D94-B4DC-89C3CF136487}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmosGettingStarted", "src\8.x\Azure Cosmos DB\CosmosGettingStarted\CosmosGettingStarted.csproj", "{7797B8CA-8493-4D94-B4DC-89C3CF136487}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosStoreProcedure", "src\8.x\Azure Cosmos DB\CosmosStoreProcedure\CosmosStoreProcedure.csproj", "{85BBFB24-A522-44C7-BB30-4048F8875A66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmosStoreProcedure", "src\8.x\Azure Cosmos DB\CosmosStoreProcedure\CosmosStoreProcedure.csproj", "{85BBFB24-A522-44C7-BB30-4048F8875A66}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmosTriggers", "src\8.x\Azure Cosmos DB\CosmosTriggers\CosmosTriggers.csproj", "{65A361D7-9107-467F-9CC0-77C1F0D34110}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosUserDefinedFunctions", "src\8.x\Azure Cosmos DB\CosmosUserDefinedFunctions\CosmosUserDefinedFunctions.csproj", "{5D6B2B77-C462-4CBF-8F1D-D7D47EA09073}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmosUserDefinedFunctions", "src\8.x\Azure Cosmos DB\CosmosUserDefinedFunctions\CosmosUserDefinedFunctions.csproj", "{5D6B2B77-C462-4CBF-8F1D-D7D47EA09073}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyVaultConsoleApp", "src\8.x\KeyVault\KeyVaultConsoleApp\KeyVaultConsoleApp.csproj", "{68D19C87-1B89-4ABC-BF7A-E3D3DEF21410}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyVaultWebApp", "src\8.x\KeyVault\KeyVaultWebApp\KeyVaultWebApp.csproj", "{7D77BEBE-0952-4758-951B-19ABFE6BF6CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyVaultManagedIdentity", "src\8.x\KeyVault\KeyVaultManagedIdentity\KeyVaultManagedIdentity.csproj", "{D878CFA7-B720-4302-8855-05FCD679BB87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,18 @@ Global
 		{5D6B2B77-C462-4CBF-8F1D-D7D47EA09073}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D6B2B77-C462-4CBF-8F1D-D7D47EA09073}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D6B2B77-C462-4CBF-8F1D-D7D47EA09073}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68D19C87-1B89-4ABC-BF7A-E3D3DEF21410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68D19C87-1B89-4ABC-BF7A-E3D3DEF21410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68D19C87-1B89-4ABC-BF7A-E3D3DEF21410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68D19C87-1B89-4ABC-BF7A-E3D3DEF21410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D77BEBE-0952-4758-951B-19ABFE6BF6CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D77BEBE-0952-4758-951B-19ABFE6BF6CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D77BEBE-0952-4758-951B-19ABFE6BF6CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D77BEBE-0952-4758-951B-19ABFE6BF6CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D878CFA7-B720-4302-8855-05FCD679BB87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D878CFA7-B720-4302-8855-05FCD679BB87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D878CFA7-B720-4302-8855-05FCD679BB87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D878CFA7-B720-4302-8855-05FCD679BB87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +84,9 @@ Global
 		{85BBFB24-A522-44C7-BB30-4048F8875A66} = {395A0652-A7D8-4350-AEAA-93FF556F786F}
 		{65A361D7-9107-467F-9CC0-77C1F0D34110} = {395A0652-A7D8-4350-AEAA-93FF556F786F}
 		{5D6B2B77-C462-4CBF-8F1D-D7D47EA09073} = {395A0652-A7D8-4350-AEAA-93FF556F786F}
+		{68D19C87-1B89-4ABC-BF7A-E3D3DEF21410} = {782825CA-FDEC-48BF-BCC7-BD68EEEC2F93}
+		{7D77BEBE-0952-4758-951B-19ABFE6BF6CA} = {782825CA-FDEC-48BF-BCC7-BD68EEEC2F93}
+		{D878CFA7-B720-4302-8855-05FCD679BB87} = {782825CA-FDEC-48BF-BCC7-BD68EEEC2F93}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3700C867-979A-4A2B-B191-902E3A8008FD}
